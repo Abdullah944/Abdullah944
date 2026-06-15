@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سياسة الخصوصية — Alrashed Family</title>
+  <style>
+    :root {
+      --navy: #071A2D;
+      --pearl: #F8F4EA;
+      --gold: #C9A227;
+      --muted: #8A9FB4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: linear-gradient(160deg, var(--navy) 0%, #0D2742 100%);
+      color: var(--pearl);
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+    }
+    h1 { color: var(--gold); font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .subtitle { color: var(--muted); font-size: 0.95rem; }
+    .updated { color: var(--muted); font-size: 0.85rem; margin-top: 0.5rem; }
+    section { margin-bottom: 1.75rem; }
+    h2 { color: var(--gold); font-size: 1.15rem; margin-bottom: 0.6rem; }
+    p, li { color: rgba(248, 244, 234, 0.92); font-size: 0.98rem; }
+    ul { padding-right: 1.25rem; margin-top: 0.4rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: var(--gold); }
+    .contact-box {
+      background: rgba(201, 162, 39, 0.1);
+      border: 1px solid rgba(201, 162, 39, 0.35);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .lang-toggle { text-align: center; margin: 1rem 0 2rem; }
+    .lang-toggle a {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border: 1px solid rgba(201, 162, 39, 0.5);
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin: 0 0.25rem;
+    }
+    .lang-toggle a:hover { background: rgba(201, 162, 39, 0.15); }
+    #en { display: none; direction: ltr; text-align: left; }
+    #en ul { padding-left: 1.25rem; padding-right: 0; }
+    footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 2.5rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Alrashed Family</h1>
+      <p class="subtitle">تطبيق عائلة الرashed — سياسة الخصوصية</p>
+      <p class="updated">آخر تحديث: يونيو 2026</p>
+    </header>
+
+    <div class="lang-toggle">
+      <a href="#ar" onclick="showLang('ar'); return false;">العربية</a>
+      <a href="#en" onclick="showLang('en'); return false;">English</a>
+    </div>
+
+    <div id="ar">
+      <section>
+        <h2>مقدمة</h2>
+        <p>
+          تطبيق <strong>Alrashed Family</strong> («التطبيق») مخصص لأفراد عائلة الرashed المعتمدين.
+          نلتزم بحماية خصوصيتك وبياناتك. توضّح هذه السياسة ما الذي نجمعه وكيف نستخدمه ومن يمكنه الاطلاع عليه.
+        </p>
+      </section>
+
+      <section>
+        <h2>البيانات التي نجمعها</h2>
+        <ul>
+          <li><strong>بيانات الحساب:</strong> الاسم، رقم الهاتف، البريد الإلكتروني، وكلمة المرور (مخزّنة بشكل آمن عبر Supabase Auth).</li>
+          <li><strong>الملف الشخصي:</strong> الصورة، تاريخ الميلاد، الفرع العائلي، المنطقة، وإعدادات الخصوصية.</li>
+          <li><strong>شجرة العائلة:</strong> الأسماء، العلاقات العائلية، وأرقام الهاتف أو مواقع المنازل عند إضافتها.</li>
+          <li><strong>الخرائط والمنازل:</strong> مواقع المنازل العائلية (إحداثيات أو روابط خرائط) عند إدخالها من قبل المسؤول.</li>
+          <li><strong>الصور والذكريات:</strong> الصور والمحتوى الذي ترفعه في قسم الذكريات.</li>
+          <li><strong>الإشعارات:</strong> رمز الجهاز (Push Token) لإرسال الإشعارات إذا فعّلتها.</li>
+          <li><strong>الاستخدام:</strong> سجل تسجيل الدخول ونشاط الحساب لأغراض الأمان وإدارة العضوية.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>كيف نستخدم البيانات</h2>
+        <ul>
+          <li>إنشاء حسابك وإدارة طلبات الانضمام للعائلة.</li>
+          <li>عرض شجرة العائلة، الخريطة، الإعلانات، المحادثات، المتجر، والذكريات.</li>
+          <li>إرسال إشعارات push عند تفعيلها.</li>
+          <li>مراجعة المسؤولين للمحتوى والاقتراحات وطلبات الأعضاء الجدد.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>من يرى بياناتك</h2>
+        <p>
+          تتحكم في ظهور معلوماتك (الهاتف، البريد، المنطقة، موقع المنزل، الصورة، وغيرها) من خلال
+          <strong>مركز الخصوصية</strong> داخل التطبيق. بعض البيانات مرئية لأفراد العائلة المعتمدين فقط
+          حسب إعداداتك. المسؤولون يمكنهم إدارة المحتوى العائلي ومراجعة طلبات الانضمام.
+        </p>
+      </section>
+
+      <section>
+        <h2>تخزين البيانات</h2>
+        <p>
+          تُخزَّن البيانات على خوادم <strong>Supabase</strong> (قاعدة بيانات سحابية آمنة).
+          الصور تُخزَّن في Supabase Storage. لا نبيع بياناتك لأطراف ثالثة.
+        </p>
+      </section>
+
+      <section>
+        <h2>حقوقك</h2>
+        <ul>
+          <li>تعديل ملفك الشخصي وإعدادات الخصوصية من داخل التطبيق.</li>
+          <li>طلب حذف حسابك أو تصحيح بياناتك بالتواصل معنا (انظر أدناه).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>الأطفال</h2>
+        <p>
+          التطبيق مخصص لأفراد العائلة المعتمدين من قبل مسؤول. لا نجمع عن قصد بيانات أطفال دون 13 سنة
+          دون موافقة ولي الأمر أو المسؤول العائلي.
+        </p>
+      </section>
+
+      <section>
+        <h2>التغييرات</h2>
+        <p>
+          قد نحدّث هذه السياسة. سنُحدّث تاريخ «آخر تحديث» أعلاه. استمرارك في استخدام التطبيق بعد
+          التحديث يعني موافقتك على السياسة المحدّثة.
+        </p>
+      </section>
+
+      <div class="contact-box">
+        <h2>التواصل</h2>
+        <p>للاستفسارات أو طلبات الخصوصية أو حذف الحساب:</p>
+        <p><a href="mailto:darkside944@gmail.com">darkside944@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div id="en">
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          <strong>Alrashed Family</strong> (“the App”) is for approved members of the Alrashed family.
+          We are committed to protecting your privacy. This policy explains what we collect, how we use it, and who can see it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Information We Collect</h2>
+        <ul>
+          <li><strong>Account:</strong> Name, phone number, email, and password (stored securely via Supabase Auth).</li>
+          <li><strong>Profile:</strong> Photo, birth date, family branch, area, and privacy settings.</li>
+          <li><strong>Family tree:</strong> Names, relationships, and optional phone or house location data.</li>
+          <li><strong>Maps &amp; houses:</strong> Family house locations when added by admins.</li>
+          <li><strong>Photos &amp; memories:</strong> Images and content you upload in Memories.</li>
+          <li><strong>Notifications:</strong> Device push token when you enable notifications.</li>
+          <li><strong>Usage:</strong> Login activity for security and membership management.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How We Use Information</h2>
+        <ul>
+          <li>Create your account and manage family join requests.</li>
+          <li>Show family tree, map, announcements, chat, shop, and memories.</li>
+          <li>Send push notifications when enabled.</li>
+          <li>Allow admins to review content, suggestions, and new member requests.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Who Can See Your Data</h2>
+        <p>
+          You control visibility via the in-app <strong>Privacy Center</strong>.
+          Some data is visible only to approved family members based on your settings.
+          Admins can manage family content and review join requests.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Storage</h2>
+        <p>
+          Data is stored on <strong>Supabase</strong>. Photos are stored in Supabase Storage.
+          We do not sell your data to third parties.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your Rights</h2>
+        <ul>
+          <li>Update your profile and privacy settings in the app.</li>
+          <li>Request account deletion or data correction by contacting us below.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>
+          The app is for family members approved by an admin. We do not knowingly collect data from children under 13
+          without parental or admin approval.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes</h2>
+        <p>
+          We may update this policy. The “Last updated” date above will change.
+          Continued use of the app means you accept the updated policy.
+        </p>
+      </section>
+
+      <div class="contact-box">
+        <h2>Contact</h2>
+        <p>For privacy questions or account deletion requests:</p>
+        <p><a href="mailto:darkside944@gmail.com">darkside944@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>&copy; 2026 Alrashed Family App</footer>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('ar').style.display = lang === 'ar' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    }
+  </script>
+</body>
+</html>
